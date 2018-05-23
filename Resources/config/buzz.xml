@@ -13,9 +13,6 @@
     <services>
         <service id="buzz.message_factory" class="%buzz.message_factory.class%" public="false" />
         <service id="buzz.client" class="%buzz.client.class%" public="false">
-            <call method="setTimeout">
-                <argument>%buzz.client.timeout%</argument>
-            </call>
             <call method="setProxy">
                 <argument>%buzz.client.proxy%</argument>
             </call>
